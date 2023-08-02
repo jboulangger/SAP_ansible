@@ -16,7 +16,7 @@
 
 - name: Copy file 
   copy: 
-    src: "{{ role_path }}/files/foto.sh"
+    src: foto.sh
     dest: /data/innovation/SAP/foto.sh
 
 - name: Execute file
