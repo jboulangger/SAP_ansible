@@ -13,7 +13,7 @@
 
 - name: Copy file 
   copy: 
-    src: sap/files/foto.sh
+    src: files/foto.sh
     dest: /data/innovation/SAP/foto.sh
 
 - name: Execute file
