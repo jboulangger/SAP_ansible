@@ -1,5 +1,5 @@
 ---
 - name: SAP repo demo
-  hosts: localhost
+  hosts: awx_dev_sap
   roles:
    - sap

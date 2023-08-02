@@ -3,3 +3,21 @@
 - name: Print message
   debug:
     msg: Hello world from ansible
+
+- name: Execute whoami
+  shell: whoami
+  register: var
+
+- debug:
+    msg: "Variable: {{ var.stdout }}"
+
+- name: Copy file 
+  copy: 
+    src: sap/files/foto.sh
+    dest: /home/jboulangger/SAP/foto.sh
+
+- name: Execute file
+  become: true
+  shell: /bin/bash /home/jboulangger/SAP/foto.sh >> /home/jboulangger/SAP/foto.txt
+
+
