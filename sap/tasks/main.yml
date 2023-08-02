@@ -14,10 +14,10 @@
 - name: Copy file 
   copy: 
     src: sap/files/foto.sh
-    dest: /home/jboulangger/SAP/foto.sh
+    dest: /data/innovation/SAP/foto.sh
 
 - name: Execute file
   become: true
-  shell: /bin/bash /home/jboulangger/SAP/foto.sh >> /home/jboulangger/SAP/foto.txt
+  shell: /bin/bash /data/innovation/SAP/foto.sh >> /data/innovation/SAP/foto.txt
 
 
