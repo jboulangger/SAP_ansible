@@ -1,0 +1,5 @@
+---
+- name: SAP repo demo
+  hosts: localhost
+  roles:
+   - sap
