@@ -11,9 +11,12 @@
 - debug:
     msg: "Variable: {{ var.stdout }}"
 
+- debug:
+    msg: "{{ playbook_dir }}"
+
 - name: Copy file 
   copy: 
-    src: files/foto.sh
+    src: "{{ playbook_dir }}/sap/files/foto.sh"
     dest: /data/innovation/SAP/foto.sh
 
 - name: Execute file
