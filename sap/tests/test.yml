@@ -1,9 +1,10 @@
----
-- hosts: localhost
-  tasks: 
-    - name: Obtener la IP
-      shell: ip add
-      register: ip_add
+--- 
+- name: Demo 
+  hosts: awx_dev_sap 
+  tasks:
+  - name: Obtener la IP
+    shell: ip add
+    register: ip_add
     
-    - debug: 
-        msg: "{{ ip_add.stdout }}"
+  - debug: 
+      msg: "{{ ip_add.stdout }}"
