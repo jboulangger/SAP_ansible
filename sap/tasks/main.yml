@@ -1,6 +1,6 @@
 ---
 # tasks file for sap
-- name: Print message
+- name: Imprimir un hello world
   debug:
     msg: Hello world from ansible
 
@@ -21,6 +21,6 @@
 
 - name: Execute file
   become: true
-  shell: /bin/bash /data/innovation/SAP/foto.sh >> /data/innovation/SAP/foto.txt
+  shell: /bin/bash /data/innovation/SAP/foto.sh >> /data/innovation/SAP/foto.output
 
 

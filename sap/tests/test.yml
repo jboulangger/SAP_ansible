@@ -1,5 +1,9 @@
 ---
 - hosts: localhost
-  remote_user: root
-  roles:
-    - sap
+  tasks: 
+    - name: Obtener la IP
+      shell: ip add
+      register: ip_add
+    
+    - debug: 
+        msg: "{{ ip_add.stdout }}"
