@@ -1,5 +1,8 @@
 ---
 # tasks file for sap
+- debug: 
+    var: ansible_job_id 
+    
 - name: Imprimir un hello world
   debug:
     msg: Hello world from ansible
